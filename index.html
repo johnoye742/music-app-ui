@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Music App UI</title>
+        <link href="assets/style.css" rel="stylesheet">
+        <script src="assets/js/script.js"></script>
+    </head>
+
+    <body onload="startP('./uploads/audio/Tom MacDonald - I Wish .mp3', false)">
+        <header class="head">
+            <div class="search-bar">
+                <img src="assets/images/search.svg" style="width:2em;height:2em;margin-left: 1%;"> 
+                <input type="text" class="sinp" placeholder="Search...">
+            </div>
+        </header>
+        <div class="container">
+            <h2 style="text-align: center;color:black;">TOP SONGS</h2>
+            <div class="cards">
+                <div class="card" onclick="startP('./uploads/audio/Tom MacDonald - I Wish .mp3', true)">
+                    <img src="assets/images/i-wish.png" class="main-image"  >
+                    <h3>I WISH</h3>
+                    <p>TOM MACDONALD</p>
+                </div>
+                <div class="card" onclick="startP('./uploads/audio/Tom MacDonald - Fake Woke .mp3', true)">
+                    <img src="assets/images/fakewoke.png" class="main-image" >
+                    <h3>FAKE WOKE</h3>
+                    <p>TOM MACDONALD</p>
+                </div>
+                <div class="card" onclick="startP('./uploads/audio/Tom MacDonald - Snowflakes.mp3', true)">
+                    <img src="assets/images/snowflakes.png" class="main-image">
+                    <h3>snowflakes</h3>
+                    <p>tom macdonald</p>
+                </div>
+                <div class="card" onclick="startP('./uploads/audio/Maroon 5 - Memories (Official Video).mp3', true)">
+                    <img src="assets/images/memories.png" class="main-image" >
+                    <h3>memories</h3>
+                    <p>Maroon 5</p>
+                </div>
+                <div class="card" onclick="startP('./uploads/audio/Clean Bandit - Rockabye feat. Sean Paul & Anne-Marie.mp3', true)">
+                    <img src="assets/images/rockabye.png" class="main-image" >
+                    
+                    <h3>rockabye</h3>
+                    <p>clean bandit ft. Sea...</p>
+                </div>
+            </div>
+        </div>
+        
+       <section class="bottom">
+           <div class="row">
+               <img src="assets/images/i-wish.png" style="object-fit: cover;height:5em;width:5em;" id="mimg">
+               <div class="col" style="margin-left: 0.5em;">
+                   <h5 id="title" style="text-transform: uppercase;">I WISH</h5>
+                   <p id="artist" style="margin:0;text-transform: uppercase;">Tom Macdonald</p>
+               </div>
+           </div>
+           
+           <div class="control">
+           <img src="assets/images/fast-backward.svg" style="width:3em;height:3em;margin-right: 1em;">
+           <div class="play" id="pb">
+               <img id="pi" src="assets/images/play.svg" style="width:2em;height:2em;margin-left:31%;margin-top:30%;">
+           </div>
+           <img src="assets/images/fast-forward.svg" style="width:3em;height:3em;margin-left: 1em;" id="forward">
+       </div>
+    </section>
+    </body>
+</html>

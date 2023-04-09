@@ -3,7 +3,8 @@
     src: url("./fonts/Rubik.ttf");
 }
 * {
-    font-family: Rubik;
+    font-family: Rubik, 'Courier New', Courier, monospace;
+    font-display: fallback;
 }
 
 body {
